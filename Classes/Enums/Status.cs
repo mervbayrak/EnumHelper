@@ -7,10 +7,10 @@ namespace EnumHelper.Classes.Enums
 	public enum Status : sbyte
 	{
 		Open = 1, 
-        Pending = 2, 
-        InProgress = 3, 
-        Done = 4, 
-        Close = 5
+        	Pending = 2, 
+        	InProgress = 3, 
+        	Done = 4, 
+        	Close = 5
 	}
 
 	public class StatusHelper : IEnumHelpers<Status>
