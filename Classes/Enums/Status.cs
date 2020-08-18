@@ -15,7 +15,7 @@ namespace EnumHelper.Classes.Enums
 
 	public class StatusHelper : IEnumHelpers<Status>
 	{
-	    static SortedDictionary<Status, String> Enum2String = new SortedDictionary<Status, string>() {
+	    	static SortedDictionary<Status, String> Enum2String = new SortedDictionary<Status, string>() {
 			{ Status.Open,          "Open"          },
 			{ Status.Pending,       "Pending"       },
 			{ Status.InProgress,    "InProgress"    },
@@ -31,21 +31,21 @@ namespace EnumHelper.Classes.Enums
 			{ "Close",              Status.Close        },
 		};
 
-        public String ToString(Status ct)
-        {
-            return Enum2String[ct];
-        }
-        public static String stToString(Status ct)
-        {
-            return Enum2String[ct];
-        }
-        public Status GetValue(string t)
-        {
-            return String2Enum[t];
-        }
-        public static Status stGetValue(string t)
-        {
-            return String2Enum[t];
-        }
+        	public String ToString(Status ct)
+        	{
+        	    return Enum2String[ct];
+        	}
+        	public static String stToString(Status ct)
+        	{
+        	    return Enum2String[ct];
+        	}
+        	public Status GetValue(string t)
+        	{
+        	    return String2Enum[t];
+        	}
+        	public static Status stGetValue(string t)
+        	{
+        	    return String2Enum[t];
+        	}
 	}
 }
